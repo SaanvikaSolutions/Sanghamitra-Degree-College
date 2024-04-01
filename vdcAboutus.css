@@ -1,0 +1,597 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* ----colors  */
+  --blue: #ffffff;
+  --light_cream: #e3e3e3;
+}
+
+/* Origin of the college */
+.vdcabout {
+  width: 100%;
+  text-align: center;
+  background-color: var(--light_cream);
+  padding: 3%;
+}
+
+.vdcabout>P {
+  margin-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+
+/* principal details  */
+
+.principal {
+  display: flex;
+  align-items: LEFT;
+  width: 100%;
+  align-self: stretch;
+  min-height: 500px;
+  justify-content: space-around;
+  background-color: var(--blue);
+  box-shadow: 0 5px 5px -12px rgba(0, 0, 0, 0.25);
+  padding: 50px 40px;
+
+}
+
+.principal2 {
+  background-color: var(--light_cream);
+}
+
+.Principal_info {
+  display: flex;
+  margin-top: 70px;
+  width: 100%;
+  justify-items: center;
+}
+
+.Principal_info>div>h2 {
+  color: var(--text-color, #252B42);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  margin-left: 20px;
+}
+
+.Principal_info>div>p {
+  color: var(--second-text-color, #737373);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.2px;
+  width: 80%;
+}
+
+.Practice_img>img {
+  width: 100%;
+  height: 500px;
+  /* margin-right: 50px; */
+}
+
+.names {
+  color: red;
+  text-align: right;
+}
+
+/* school misson and vision tagline*/
+
+.school_vision_tagline {
+  width: 100%;
+  min-height: 120px;
+  flex-shrink: 0;
+  background: rgb(221,216,248);
+  background: radial-gradient(circle, rgba(221,216,248,1) 0%, rgba(72,61,139,1) 100%);
+  /* background: rgb(255,167,0);
+    background: radial-gradient(circle, rgba(255,167,0,0.32816876750700286) 0%, rgba(249,153,7,0.4822303921568627) 100%); */
+  text-align: center;
+  /* margin-left: 200px; */
+}
+
+.school_vision_tagline>h2 {
+  color: black;
+  padding-top: 20px;
+  height: 21px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 2.8rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 151%;
+  letter-spacing: -0.135px;
+}
+
+
+
+/* school misson and vision*/
+
+.school_misson {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 100px;
+  justify-content: center;
+  background-color: var(--blue);
+}
+
+.misson_pic>img {
+  width: 500px;
+}
+
+.misson_content {
+  margin-top: 100px;
+  margin-top: 12px;
+  text-align: center;
+  width: 50%;
+
+}
+
+.misson_content>p {
+  margin-top: 40px;
+  color: var(--second-text-color, #737373);
+  font-family: "poppins", sans-serif;
+  font-size: 1.3rem;
+  text-align: justify;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+.school_vision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 50px;
+  gap: 100px;
+  justify-content: center;
+  background: var(--light_cream);
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
+}
+
+.vision_pic {
+  width: 50%;
+}
+
+.vision_pic>img {
+  width: 100%;
+}
+
+.vision_content {
+  /* margin-top: 40px;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 100px; */
+
+  margin-top: 100px;
+  margin-top: 12px;
+  text-align: center;
+  width: 50%;
+}
+
+.vision_content>p {
+  /* margin-top: 40px; */
+  /* color: var(--second-text-color, #737373);
+    font-size: 1.3rem;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.5px; */
+
+  margin-top: 40px;
+  color: var(--second-text-color, #737373);
+  font-family: "poppins", sans-serif;
+  font-size: 1.3rem;
+  text-align: justify;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+/* style for animation */
+
+.vdcabout,
+.school_vision_tagline,
+.misson_content,
+.misson_pic,
+.vision_content,
+.vision_pic,
+.Principal_info,
+.Practice_img {
+  opacity: 0;
+
+}
+
+.vdcabout.animate__animated,
+.school_vision_tagline.animate__animated,
+.misson_content.animate__animated,
+.misson_pic.animate__animated,
+.vision_content.animate__animated,
+.vision_pic.animate__animated,
+.Principal_info.animate__animated,
+.Practice_img.animate__animated {
+  opacity: 1;
+  animation-duration: 2.5s;
+}
+
+
+/* Media Query */
+
+@media only screen and (max-width: 900px) {
+
+  .vdcabout {
+    width: auto;
+    /* width: 100%; */
+    width: 95%;
+    margin: 0px auto;
+  }
+
+  .vdcabout>P {
+    font-size: 0.8rem;
+  }
+
+
+  .Principal_Details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vdcabout.animate__animated,
+  .school_vision_tagline.animate__animated,
+  .misson_content.animate__animated,
+  .misson_pic.animate__animated,
+  .vision_content.animate__animated,
+  .vision_pic.animate__animated,
+  .Principal_Details.animate__animated,
+  .principal.animate__animated {
+    opacity: 1;
+    animation-duration: 0s;
+  }
+
+  .vdcabout,
+  .school_vision_tagline,
+  .misson_content,
+  .misson_pic,
+  .vision_content,
+  .vision_pic,
+  .principal {
+    opacity: 1;
+  }
+
+  .school_tagline {
+    width: 100%;
+  }
+
+  .school_vision_tagline>h2 {
+    font-size: 2.5rem;
+  }
+
+  .school_misson {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    padding: 0%;
+    padding-left: 0%;
+    gap: 0%;
+  }
+
+  .misson_content {
+    width: 85%;
+    margin: 10px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .misson_content p {
+    text-align: justify;
+    font-size: 0.8rem;
+    padding-top: 0px;
+    margin-top: 0px;
+    line-height: 20px;
+  }
+
+  .misson_pic>img {
+    width: 100%;
+    /* padding: 4%; */
+  }
+
+  .school_vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0%;
+    padding: 0px;
+    padding-left: 0%;
+  }
+
+  .vision_content {
+    width: 85%;
+    margin: 10px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vision_content p {
+    text-align: justify;
+    font-size: 0.8rem;
+    padding-top: 0px;
+    margin-top: 0px;
+    line-height: 20px;
+  }
+
+  .vision_pic>img {
+    width: 100%;
+  }
+
+  .vision_content {
+    margin-bottom: 0%;
+    justify-content: center;
+  }
+
+  .school_vision_tagline>h2 {
+    font-size: 100%;
+  }
+
+  .school_vision_tagline {
+    min-height: 60px;
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .Principal_info {
+    margin: 0px;
+  }
+
+  .Principal_info div {
+    width: 85%;
+    margin: 0px auto;
+  }
+
+  .Principal_info>div>h2 {
+    font-size: 1.5rem;
+  }
+
+  .Principal_info>div>p {
+    width: auto;
+    text-align: justify;
+    font-size: 1rem;
+  }
+
+  .Practice_img {
+    width: 100%;
+    padding: 2%;
+    margin-right: 0%;
+  }
+
+  .vision_content>p {
+    width: 90%;
+  }
+
+  .misson_content>p {
+    width: 90%;
+  }
+}
+
+
+
+
+/* <!-- ******************************* footer start******************************************** --> */
+
+
+
+/* * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.new_footer_area {
+    background: #fbfbfd;
+    width: 100%;
+}
+
+.footerlogo {
+    margin-top: 3%;
+    width: 100%;
+    align-items: center;
+}
+.footerlogo img{
+    width: 100px;
+    height: auto;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+    color: #555;
+    font-family: 'Poppins';
+    line-height: 20px;
+    width: 100%;
+    overflow: hidden;
+    background: #f5f4f3;
+}
+
+.footertext {
+    color: #555;
+    text-decoration: none;
+}
+
+.clickable-element:hover {
+    color: #e63131;
+    transition: all 0.3s ease;
+}
+
+.footercontent {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    padding-top: 5%;
+    color: #555;
+}
+
+.footercontent:hover {
+    letter-spacing: 1px;
+    color: #e63131;
+}
+
+.footer-1 {
+    width: 100%;
+    font-size: 20px;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+.hidden-list {
+    margin-left: 20px;
+}
+
+.footerheading {
+    padding-top: 3%;
+    padding-bottom: 5%;
+    font-size: 25px;
+}
+
+.footer-address {
+    margin-top: 4%;
+}
+
+.email {
+    padding: 10%;
+    font-size: 20px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.gmaps {
+    width: 100%;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .footer_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 3%;
+    }
+
+    .footer-1 {
+        width: 100%;
+    }
+
+    .gmaps>iframe {
+        width: 100%;
+        padding-right: 3%;
+
+    }
+
+    .footerheading {
+        color: #e66363;
+        text-decoration: underline #e66363;
+    }
+
+    .footercontent {
+        padding-top: 2%;
+    }
+
+
+} */
+
+
+.about-menu{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 1% 3%;
+}
+.about-menu h1{
+  font-weight: 500;
+  color: chocolate;  
+}
+.about-menu b{
+  margin: 10px;
+  font-size: large;
+  font-weight: 500;
+}
+.core-values{
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.core-values div {
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: wrap;
+  flex-direction: column;
+  border-radius: 10px;
+  height: 300px;
+  transition: all 0.3s ease;
+}
+.core-values div:hover{
+  border-radius: 20px;
+  background-color: #ffffff;  
+  scale: 1.05;
+  border: none;
+  cursor: pointer;
+}
+.image{
+  height: 100px;
+  width: 100px;
+}
+.core-values p{
+  text-align: justify;
+  font-size: small;
+}
+
+@media screen and (max-width: 768px) {
+  .core-values div {
+      width: calc(50% - 20px); /* Show 2 items per row for smaller screens */
+      font-size: small;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .core-values div {
+      width: calc(100% - 20px); /* Show 1 item per row for smallest screens */
+  }
+}

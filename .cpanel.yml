@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/qmy9y21r9ou0/public_html/sanghamitradegreecollege.com
+    - /bin/cp * $DEPLOYPATH
