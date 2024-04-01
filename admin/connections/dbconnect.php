@@ -1,13 +1,13 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$database = "vdc";
-
-// $servername = "sg2plzcpnl504315";
-// $username = "Vdc_User1";
-// $password = "%zsjXyEn=xCC";
+$username = "Sanghamitra_User1";
+$password = "Z$A$rFq3*KE]";
+$database = "Sanghamitra";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
 // $database = "vdc";
+
 
 // Create a connection
 $con = new mysqli($servername, $username, $password, $database);
